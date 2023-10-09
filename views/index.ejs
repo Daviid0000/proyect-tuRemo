@@ -18,30 +18,54 @@
   </head>
   <body class="d-flex min-vh-100 text-center text-white">
     <div class="cover-container d-flex w-100 h-100 flex-column">
-      <header class="mb-auto">
-        <div>
-          <nav class="nav nav-masthead justify-content-center float-md-start">
-            <a class="nav-link text-white" href="/">Inicio</a>
-            <a class="nav-link text-white" href="/empresa">Empresa</a>
-            <a class="nav-link text-white" href="/support">Soporte</a>
-          </nav>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link text-white" href="/login">Ingresar</a>
-            <a class="nav-link text-white" href="/registro">Registrarse</a>
-          </nav>
+      
+      <nav class="navbar navbar-expand-md navbar-dark  bg-warning mb-4">
+        <div class="container-fluid" style="display: flex; flex-direction: column;">
+          <img src="../views/taxi.jpg" style="width: 50px; opacity: .5;" alt="">
+          <a class="navbar-brand" href="#">tuRemo</a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soporte</a>
+              </li>
+            </ul>
+    
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-light m-2" type="submit">Registrarse</button>
+              <button class="btn btn-outline-light m-2" type="submit">Ingresar</button>
+    
+            </form>
+    
+          </div>
         </div>
-      </header>
-      <main>
+      </nav>
+    
+      <main >
         <div>
           <img class="img-fluid" src="/img/image.png" alt="Imagen de taxi" height="300" width="300">
           <div class="letras">
           <h1 class="display-1">tuRemo</h1>
           <h3 class="display-6">¿Necesitas un remis?</h3>
-          <button type="button">Ver Aquí</button>
+          <a class="btn btn-warning" href="#"> Ver Aquí</a>
         </div>
         </div>
       </main>
-      <footer class="fixed-bottom text-black">Copyright© Derechos Reservados Team Interior 2023, tuRemo</footer>
+
+      <footer style="padding: 10px;">
+        <div class="text-black" style="padding: 10px; border-top: 1px solid #000;">
+          © Copyright - Derechos Reservados - Team Interior 2023 - tuRemo
+        </div>
+      </footer>
+    
+    </div>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   
     </body>
